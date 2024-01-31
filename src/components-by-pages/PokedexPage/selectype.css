@@ -1,0 +1,13 @@
+.selectType__main > select option:hover {
+  background-color: red;
+  color: white;
+}
+.selectType__main{
+  width: 10em;
+  padding: 0.75em;
+  font-family: Century 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: 600;
+  border-style: none;
+  margin-right: 4em;
+  text-transform: capitalize;
+}
