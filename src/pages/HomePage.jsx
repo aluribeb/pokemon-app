@@ -23,7 +23,7 @@ const HomePage = () => {
     <div className='homepage__main'>
       <img src={pokedexLogo} alt="" className="homepage__img" />
       <h2 className='homepage__title' >Hi, Trainer! </h2>
-      <p>To launch this app, please provide your trainer name.</p>
+      <p className='homepage__subtitle' >To launch this app, please provide your trainer name.</p>
       <form className='homepage__form' onSubmit={handleSubmit}>
         <input className='homepage__input' type="text" ref={inputTrainer} placeholder='Your Name..' />
         <button className='homepage__btn' >Gotta catch them all!</button>

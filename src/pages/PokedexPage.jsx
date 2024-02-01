@@ -37,7 +37,7 @@ const PokedexPage = () => {
       <h2 className='pokedexPage__name_trainer' ><span className='pokedexPage__greeting'> Hi, {trainerName}</span> which ones of all of these Pokémon will you catch?</h2>
 
       <div className='pokedexPage__group' >
-        <form onSubmit={handleSearch}>
+        <form className='pokedex__form' onSubmit={handleSearch}>
           <input className='pokedexPage__input' type="text" ref={inputName} placeholder="Write your Pokémon's name here" />
           <button className='pokedexPage__btn' >Search</button>
         </form>

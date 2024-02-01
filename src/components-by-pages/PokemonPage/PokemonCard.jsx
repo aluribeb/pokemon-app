@@ -90,15 +90,16 @@ const PokemonCard = ({ pokemon }) => {
                     </div>
                 </article>
             </div>
-            <div className="pokemoncard__movements">
+            <div className="pokemoncard__border__movements">
                 <div className='pokemoncard__movements__group' >
-                    <h2 className="pokemoncard__movements__name">Movements:</h2>
-                    <div className="pokemoncard__line__movements"></div>
+                    <div className="group__line"></div>
+                    <h2 className="pokemoncard__name"> Movements</h2>
+                    <div className="group__line2"></div>
                     <img src={pokeball} alt="" className="pokemoncard__stats__img" />
                 </div>
-                <ul>
+                <ul className='movements__list'>
                     {pokemon?.moves.slice(0, 20).map((move, index) => (
-                        <li key={index}>{move.move.name}</li>
+                        <li className='movement__item__list' key={index}>{move.move.name}</li>
                     ))}
                 </ul>
             </div>
